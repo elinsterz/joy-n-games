@@ -1,0 +1,291 @@
+@font-face {
+    font-family:'Platform-Bold';
+    src: url('fonts/Platform-Bold.eot');
+    src: url('fonts/Platform-Bold.ttf');
+    format('truetype');
+}
+
+
+@font-face {
+    font-family:'basis-grotesque-regular-pro';
+    src: url('fonts/basis-grotesque-regular-pro.eot');
+    src: url('fonts/basis-grotesque-regular-pro.ttf');
+    format('truetype');
+}
+
+/* div{
+    border: 1px solid red;
+} */
+
+body, html{
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+#dodo-title{
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    width: 60vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.star-icon{
+    width: 7vw;
+    z-index: 2;
+    position: fixed;
+    margin-bottom: auto;
+    margin-top: auto;
+    top: 3vh;
+    left: 3vw;
+}
+
+.left-arrow{
+    width: 7vw;
+    z-index: 3;
+    position: fixed;
+    /* right: 100vw' */
+    margin-bottom: auto;
+    margin-top: auto;
+    top: 50vh;
+    right: 2vw;
+}
+
+.num-icon{
+    width: 3.5vw;
+    z-index: 2;
+    position: fixed;
+    margin-bottom: auto;
+    margin-top: auto;
+    top: 3vh;
+    left: 3vw;
+}
+
+
+.vl-sidebar{
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 6vw;
+    z-index: 2;
+}
+
+.vl-sidebar-img{
+    height:100%;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    vertical-align: center;
+}
+
+/*/////////////// TITLE PAGE /////////////*/
+
+.container{
+    vertical-align: center;
+    margin-top: 35%;
+    width: 100vw;
+    height: 100vh;
+}
+
+#title{
+    padding-left: 3%;
+    /* border-left: solid black 0.5px; */
+    display: inline-block;
+}
+
+#poem-title {
+    font-family: 'Platform-Bold';
+    letter-spacing: 0.03em;
+    font-size: 3.25em;
+    line-height: 0.75em;
+}
+
+/* div{
+    border: solid 1px pink;
+} */
+
+
+/*/////////////// INSIDE POEM /////////////*/
+
+.header-title{
+    padding-left: 4%;
+}
+
+#manifesto-div{
+    padding-top: 12vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 10vh;
+}
+
+.manifesto-head{
+    font-family: 'Platform-Bold';
+    font-size: 1.15em;
+    line-height: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 5vh;
+}
+
+.manifesto-text{
+    font-family: 'Platform-Bold';
+    letter-spacing: 0.03em;
+    font-size: 2vw;
+    line-height: 1.6em;
+    color: black;
+}
+
+/* .vl-poem {
+    border-left: 0.5px solid black;
+    padding-top: -4%;
+    padding-left: 4%;
+} */
+
+
+/* BACKGROUND */
+
+#bkg-container{
+    background-color: #F8E71C;
+}
+
+.blue-container{
+    background-color: #00C1FF;
+}
+
+.orange-container{
+    background-color: #FF8700;
+}
+
+.green-container{
+    background-color: #8EF217;
+}
+
+.purple-container{
+    background-color: #9D4FFF;
+}
+
+.turq-container{
+    background-color: #33FFD6;
+}
+
+.pink-container{
+    background-color: #FF87EF;
+}
+
+/*/////////////// GRADIENT GENERAL /////////////*/
+@-webkit-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+
+.gradient-container{
+    width: calc(100vw);
+    height: calc(100vh);
+    /* background: #eee; */
+}
+
+/*/////////////// GRADIENT INDEX/////////////*/
+#gradient-index {
+    background: linear-gradient(130deg, #00C1FF, #F8E71C, #FF87EF, #8EF217, #9D4FFF);
+    width: 100vw;
+    height: 100vh;
+
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+  
+/*/////////////// GRADIENT POEM 1/////////////*/
+#gradient-poem-1{
+    background: linear-gradient(130deg, #FFDB9F, #CBF2F1, #F0FF00, #EBDCB9);
+    
+    background-size: 500% 500%;
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    -o-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+/*/////////////// GRADIENT POEM 2/////////////*/
+#gradient-poem-2{
+    background: linear-gradient(130deg, #FFC6A9, #FBFF5A, #D4CECE, #EBDCB9);
+    
+    background-size: 500% 500%;
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    -o-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+/*/////////////// GRADIENT POEM 3/////////////*/
+#gradient-poem-3{
+    background: linear-gradient(130deg, #CEF5DD,#DBF8F2, #A1D5D7, #CCCCC2);
+    
+    background-size: 500% 500%;
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    -o-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+
+/*/////////////// GRADIENT POEM 4/////////////*/
+#gradient-poem-4{
+    background: linear-gradient(130deg, #F7C3C3,#B9C3F2, #F6CDB5, #B7A4DA);
+    
+    background-size: 500% 500%;
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    -o-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+
+/*/////////////// GRADIENT POEM 5/////////////*/
+#gradient-poem-5{
+    background: linear-gradient(130deg, #C0FF94,#FFDB9F, rgb(182, 249, 206),#C0FF94);
+    
+    background-size: 500% 500%;
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    -o-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+/*/////////////// GRADIENT POEM 6/////////////*/
+#gradient-poem-6{
+    background: linear-gradient(130deg, #BBE5FF,#B3B3B3, #EEE0C8);
+    
+    background-size: 500% 500%;
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    -o-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+
